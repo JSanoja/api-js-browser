@@ -5,7 +5,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var browseRouter = require('./routes/browse');
-
+var thumbRouter = require('./routes/thumb');
 var app = express();
 
 app.use(logger('dev'));
@@ -16,5 +16,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/api/browse', browseRouter);
+app.use('/api/thumb', thumbRouter);
 
 module.exports = app;

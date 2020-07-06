@@ -18,7 +18,11 @@
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
-    "morgan": "~1.9.1"
+    "ffmpeg": "0.0.4",
+    "ffprobe": "^1.1.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "morgan": "~1.9.1",
+    "thumbsupply": "^0.4.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"

@@ -1,2 +1,3 @@
 public/source/**
 !public/source/cover.jpg
+node_modules
