@@ -2,6 +2,11 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var ffmpeg = require('fluent-ffmpeg');
+
+// Configure ffmpeg and ffprobe paths
+ffmpeg.setFfmpegPath(require('ffmpeg-static'));
+ffmpeg.setFfprobePath(require('ffprobe-static').path.trim());
 
 var indexRouter = require('./routes/index');
 var browseRouter = require('./routes/browse');
